@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/Karabas.iml" filepath="$PROJECT_DIR$/.idea/Karabas.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/karabas.iml" filepath="$PROJECT_DIR$/.idea/karabas.iml" />
+>>>>>>> df2a647127bbe4ef123bb19625ad5585b951d386
     </modules>
   </component>
 </project>

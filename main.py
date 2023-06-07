@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 from ui_led import Ui_led
 from ui_face import Ui_Face
@@ -1072,3 +1073,21 @@ if __name__ == '__main__':
     myshow=MyWindow()
     myshow.show()
     sys.exit(app.exec_())
+=======
+# This is a sample Python script.
+
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+>>>>>>> df2a647127bbe4ef123bb19625ad5585b951d386
