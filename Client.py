@@ -25,7 +25,7 @@ class Client:
     def turn_on_client(self,ip):
         self.client_socket1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)       # UDP client
-        self.client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 65538)
+        self.client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 65536)
         print (ip)
     def turn_off_client(self):
         try:
