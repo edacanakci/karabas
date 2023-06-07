@@ -7,3 +7,5 @@
 /dataSources/
 /dataSources.local.xml
 /venv/
+/__pycache__/
+/.idea/other.xml

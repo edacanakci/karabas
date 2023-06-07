@@ -30,6 +30,8 @@ class MyWindow(QMainWindow,Ui_client):
         self.lineEdit_IP_Adress.setText(str(file.readline()))
         file.close()
 
+        #Dynamic Label
+
         #ProgressBar
         self.progress_Power.setMinimum(0)
         self.progress_Power.setMaximum(100)
