@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 from ui_led import Ui_led
 from ui_face import Ui_Face
