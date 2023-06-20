@@ -239,6 +239,14 @@ class Ui_client(object):
         self.Button_IMU.setStyleSheet("font: 10pt \"Arial\";")
         self.Button_IMU.setObjectName("Button_IMU")
 
+        self.Button_Example = QtWidgets.QPushButton(client)
+        self.Button_Example.setGeometry(QtCore.QRect(newX + 500, 400, 90, 30))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        self.Button_Example.setFont(font)
+        self.Button_Example.setStyleSheet("font: 10pt \"Arial\";")
+        self.Button_Example.setObjectName("Button_Example")
+
         self.slider_height = QtWidgets.QSlider(client)
         self.slider_height.setGeometry(QtCore.QRect(newX + 500, newY + 390, 160, 22))
         font = QtGui.QFont()
@@ -631,3 +639,4 @@ class Ui_client(object):
         self.label_X_5.setText(_translate("client", "Attitude Angle"))
         # self.label_sonic.setText(_translate("client", "Obstacle:0cm"))
         self.Button_Relax.setText(_translate("client", "Relax"))
+        self.Button_Example.setText(_translate("client", "Example"))

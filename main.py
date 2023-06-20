@@ -64,6 +64,10 @@ class MyWindow(QMainWindow, Ui_client):
         self.Button_Step_Right.released.connect(self.stop)
         self.Button_Buzzer.pressed.connect(self.buzzer)
         self.Button_Buzzer.released.connect(self.buzzer)
+        self.Button_Example.pressed.connect(self.example)
+        self.Button_Example.released.connect(self.example)
+
+
 
         # Slider
         self.slider_head.setMinimum(50)
@@ -467,12 +471,25 @@ class MyWindow(QMainWindow, Ui_client):
             command = cmd.CMD_BUZZER + '#1' + '\n'
             self.client.send_data(command)
             self.Button_Buzzer.setText('Noise')
-            # print (command)
+            print (command)
         else:
             command = cmd.CMD_BUZZER + '#0' + '\n'
             self.client.send_data(command)
             self.Button_Buzzer.setText('Buzzer')
-            # print (command)
+            print (command)
+
+    # EXAMPLE
+    def example(self):
+        if self.Button_Example.text() == 'Example':
+            command = cmd.CMD_EXAMPLE + '#1' + '\n'
+            self.client.send_data(command)
+            self.Button_Example.setText('Example1')
+            print (command)
+        else:
+            command = cmd.CMD_EXAMPLE + '#0' + '\n'
+            self.client.send_data(command)
+            self.Button_Example.setText('Example0')
+            print (command)
 
     # BALANCE
     def imu(self):
